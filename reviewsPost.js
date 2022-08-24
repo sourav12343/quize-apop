@@ -6,8 +6,8 @@ function postComment(data){
      
 
 const commentAll=[
-    {"name":"Ankita Bagale", "content": "This is comment 1"},
-    {"name":"Atharva Bagale", "content": "This is comment 2"}
+    {"name":"Shalini Tiwari", "content": "This is comment 1"},
+    {"name":"Madiha Mallick", "content": "This is comment 2"}
     ];
 for(let i=0; i<commentAll.length;i++){
    postComment(commentAll[i]);  
