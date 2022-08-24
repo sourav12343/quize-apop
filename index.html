@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Food Blog</title>
+        <meta name="description" content="I am a coder and learner. I am currently lerning Html, css, JS.">
+        <meta name="author" content="Shalini Tiwari">
+        <meta name="theme-color" content="#A9A9A9">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="Images/favicon3.icon" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+            });
+        </script>
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="header"> </div>
+
+        <div id="About" class="carousel-textbody center-xy" 
+            <h2 class="text-body">Image SlideShow</h2>
+            <p class="text-body">Click on Autoplay on to autoplay the slideshow.<br>
+            Click on Autoplay off to turn off autoplay.</p>
+            <div class="center-xy">
+                <button class="autoplayButton autoplayOn" onclick="autoplayOn()">Autoplay ON</button>
+                <button class="autoplayButton autoplayOff" onclick="autoplayOff()">Autoplay OFF</button>
+            </div>
+
+            <div class="carousel">
+                <div class="mySlides fade">
+                    <div class="slide1">
+                        <img src="Images/imag3.jpeg" style="width: 100%;" alt="image1">
+                        <div class="noOfSlide">1/3</div>
+                    </div>  
+                </div>  
+                <div class="mySlides fade">
+                    <div class="slide2">
+                        <img src="Images/imag2.jpeg" style="width: 100%;" alt="image1">
+                        <div class="noOfSlide">2/3</div>
+                    </div>  
+                </div> 
+                <div class="mySlides fade">
+                    <div class="slide2">
+                        <img src="Images/imag5.jpeg" style="width: 100%;" alt="image1">
+                        <div class="noOfSlide">3/3</div>
+                    </div>  
+                </div> 
+
+                <a class="arrow right" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="arrow left" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dotsCarousel">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> 
+
+            </div>
+        </div>
+        <div id="Menu" class="text-body">
+           
+        </div>
+
+        <!-- footer -->
+        <div id="footer"></div>
+        
+            <script src="app.js"></script>
+    </body>
+</html>

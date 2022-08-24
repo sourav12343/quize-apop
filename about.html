@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About-Ankita</title>
+        <meta name="description" content="I am a coder and learner. I am currently lerning Html, css, JS.">
+        <meta name="author" content="Ankita Bagale">
+        <meta name="theme-color" content="#A9A9A9">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="aboutStyle.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="Images/favicon3.icon" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+            });
+        </script>
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+
+    <body>
+            <!-- Header navigation- It will get loaded through JS in below tag -->
+            <div id="header"></div>
+
+            <!-- to display the hidden content below the sticky header, added some margin -->
+            <div class="startOfBody"></div>
+
+            <!-- introduction area of the page -->
+            <div class="page-title">
+                <h1 style="text-align: center;">About Author</h1>
+                <p>Hi! I am a beginner who had always wanted to learn web development. I am a passionate and hard working who always wanted to learn and improve my skills as a developer.</p>
+            </div>
+
+            <!--Image, text with CTA module: BG color/BG image (Row1) -->
+            <div class="imageRow">
+
+                <div class="imageSection float-left width60" style="background-image: url('Images/imag7.jpeg');" onmouseover="mouseOver(0)" onmouseout="mouseOut(0)">
+                    <div class="textSection bgColor1">
+                        <div class="text">
+                            <h3>Hi, I am Shalini</h3>
+                            <p>I am learning React and Node. Currently working on Responsive Web in this project</p>
+                            <div class="buttonSection">
+                                <a href="https://www.google.com" target="_blank">Let's Go</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="imageSection float-right width40" style="background-image: url('Images/imag9.jpeg'); background-repeat: no-repeat; background-size:cover;" onmouseover="mouseOver(1)" onmouseout="mouseOut(1)">
+                    <div class="textSection bgColor2">
+                        <div class="text">
+                            <h3>Hi, I am Shalini</h3>
+                            <p>I am learning React and Node. Currently working on Responsive Web in this project</p>
+                            <div class="buttonSection">
+                                <a href="https://www.google.com" target="_blank">Let's Go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Image, text with CTA module: BG color/BG image (Row2) -->
+            <div class="imageRow">
+                <div class="imageSection float-left width40" style="background-image: url('Images/imag4.jpeg');" onmouseover="mouseOver(2)" onmouseout="mouseOut(2)">
+                    <div class="textSection bgColor3">
+                        <div class="text">
+                            <h3>Hi, I am Shalini</h3>
+                            <p>I am learning React and Node. Currently working on Responsive Web in this project</p>
+                            <div class="buttonSection">
+                                <a href="https://www.google.com" target="_blank">Let's Go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="imageSection float-right width60" style="background-image: url('Images/imag8.jpeg');" onmouseover="mouseOver(3)" onmouseout="mouseOut(3)">
+                    <div class="textSection bgColor4">
+                        <div class="text">
+                            <h3>Hi, I am Shalini</h3>
+                            <p>I am learning React and Node. Currently working on Responsive Web in this project</p>
+                            <div class="buttonSection">
+                                <a href="https://www.google.com" target="_blank">Let's Go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <!-- Footer- It will get loaded through JS in below tag -->
+            <div id="footer"> </div>
+            
+            <script>
+                let bgColor= "";
+                function mouseOver(i){
+                    const sectionArea=document.querySelectorAll(".textSection");
+                    bgColor=sectionArea[i].style.backgroundColor;
+                    sectionArea[i].style.backgroundColor="transparent";
+                 }
+                function mouseOut(i){
+                    const sectionArea=document.querySelectorAll(".textSection");
+                    sectionArea[i].style.backgroundColor=bgColor;
+                 }
+            </script>
+        </body>

@@ -1,0 +1,54 @@
+     <nav>
+           <div class="logo">
+                <a href="/index.html"> <img src="Images/myLogo.jpg" alt="Logo" width="46" height="46"> </a>
+            </div>
+
+            <ul class="Nav-Links">
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#Menu">Food Menu</a>
+                    </li>
+                    <li>
+                        <a href="/reviews.html">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contact Us</a>
+                    </li>  
+            </ul>
+                
+            <div>
+                    <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Type to search" name="search">
+                    <button type="submit"><i class="fa fa-search"> </i></button>
+                    </form>
+            </div>
+
+            <div class="Burger">  
+                <div class="line1"> </div>
+                <div class="line2"> </div>
+                <div class="line3"> </div>
+            </div>
+          <script>
+                const navSlide = () =>{
+                const burger = document.querySelector('.Burger');
+                const nav=document.querySelector('.Nav-Links');
+                const navLinks=document.querySelectorAll('.Nav-Links li')
+                burger.addEventListener('click', ()=>{
+                    //toggle menu
+                    nav.classList.toggle('Nav-Active');
+                    navLinks.forEach((link, index)=>{
+                        if (link.style.animation){
+                            link.style.animation='';
+                        }
+                        else{
+                        link.style.animation=`navLinksFade 0.5s ease forwards ${index*100+400}ms`;
+                        }
+                    })
+                    burger.classList.toggle('toggle');
+                })
+            }
+            navSlide();
+          </script>  
+     </nav>

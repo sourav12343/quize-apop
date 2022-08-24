@@ -1,0 +1,133 @@
+/* about.html css */
+
+/* starting of body: space correction for sticky nav */
+.startOfBody{
+    margin-top: 8vh;
+}
+
+/* Introduction part of the page styling */
+.page-title{
+    margin: 20px 60px;
+    
+}
+
+.page-title h1{
+font-size: 36px;
+padding-top: 40px;
+padding-bottom: 20px;
+border-bottom: 2px solid white;
+}
+.page-title p{
+    padding: 20px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* Styling the 2 images in a row */
+.imageRow{
+width: 100%;
+box-sizing: border-box;
+height: 500px;
+overflow: hidden;
+}
+
+/* image section styling */
+.imageSection{
+    height: inherit; 
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px){
+.width60{
+    width: 60%;
+}
+.width40{
+    width: 40%;
+}
+.float-left{
+float: left;
+}
+.float-right{
+float: right;
+}
+}
+/* text section styling */
+
+.textSection{
+    padding: 50px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.bgColor1{
+    background-color:rgb(236, 141, 129,0.85);
+}
+.bgColor2{
+    background-color:rgb(231, 183, 136, 0.85);
+}
+.bgColor3{
+    background-color:rgb(142, 169, 232, 0.85);
+}
+.bgColor4{
+    background-color:rgb(135, 197, 164, 0.85);
+}
+.textSection h3{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 3px solid white;
+}
+.textSection p{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+/* CTA item styling */
+.textSection a{
+    background-color: rgba(36, 41, 67);
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 25px;
+    font-size: 14px;
+}
+.textSection a:hover{
+    color: #9bf1ff;
+   border:2px solid #9bf1ff;
+}
+
+
+
+@media screen and (max-width:768px){
+    .page-title{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .page-title h1{
+        padding: 20px 0 20px 0;
+        font-size: 28px;
+    }
+    .page-title p{
+        margin: 20px;
+        padding: 0;
+        font-size: 16px;
+    }
+    .imageRow{
+        height: 600px;
+        display: block;
+    }
+    .imageSection{
+        display: block;
+        height: 300px;
+    }
+    .textSection h3{
+        font-size: 22px;
+    }
+    .textSection p{
+        font-size: 16px;
+    }
+
+}

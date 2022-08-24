@@ -1,0 +1,141 @@
+/* styling of review page */
+
+/* styling of fields */
+.reviewDetailsForm form{
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
+.reviewDetails{
+    display: flex;
+    width: 100%;
+}
+.fields{
+    width: 50%;
+    text-align: center;
+    padding-top: 40px;
+}
+.labels{
+    height: 50px;
+    margin: 0 10px;
+    background-color: rgb(81, 92, 148);
+}
+.fields label{
+font-size: 20px;
+line-height: 50px;
+font-weight: 700;
+}
+.textbox{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.textbox input[type=text]{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    padding: 0 10px;
+}
+div.textbox{
+    height: 50px;
+}
+
+textarea{
+        width: 100%;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: 'Open Sans', sans-serif;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 18px;  
+        padding-bottom: 0;     
+ }
+
+ .submitReview{
+     text-align: center;
+     padding-top:20px;
+ }
+ .submitReview button{
+     cursor: pointer;
+     min-width: 150px;
+     font-size: 16px;
+     font-weight: 700;
+     padding: 12px 25px;
+     color: white;
+     border: 2px solid white;
+     border-radius: 25px;
+     background-color:rgba(36, 41, 67) ;
+ }
+ .submitReview button:hover{
+    color: #9bf1ff;
+    border:2px solid #9bf1ff;
+ }
+
+ /* error message in form styling */
+ input:invalid { 
+    border:solid red;
+    }
+
+.errorMessage{
+    display: none;
+}
+.errorMessage h5{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(250, 62, 94);
+}
+.errorMessage ::before{
+    padding-right: 5px;
+    color:  rgb(250, 62, 94);
+}
+ 
+
+/* posted reviews section styling */
+.postedReviews{
+    margin: 30px 100px;
+}
+.postedReviews h4{
+font-size: 14px;
+padding: 0px 10px;
+line-height: 22px;
+background-color:rgb(67, 76, 122);
+color: white;
+}
+.postedReviews p{
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 10px;
+    margin: 0;
+    background-color:rgb(81, 92, 148);
+    color: white;
+    }
+    
+
+ @media screen and (max-width:768px){
+     .reviewDetails{
+         display: block;
+     }
+     .fields{
+         width: 100%;
+         padding-top: 20px;
+     }
+     .fields label{
+        font-size: 18px;
+     }
+     .labels{
+        margin: 0;
+     }
+     .textbox{
+        padding-right:0px;
+        padding-left: 0px;
+    }
+    .errorMessage h5{
+        margin-left: 0px;
+    }
+    .postedReviews{
+        margin: 30px 0;
+    }
+ }

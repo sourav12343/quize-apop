@@ -1,0 +1,384 @@
+/* index.html Css */
+*{
+    margin: 0;   
+    box-sizing: border-box; 
+    /* overflow-x: hidden; */
+ font-family: 'Open Sans', sans-serif;  
+}
+
+body{
+    background-color: rgba(36, 41, 67,0.93);
+    color: white;
+}
+
+a{
+   text-decoration: none;
+   text-decoration-style: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* Styling for navigation header */
+.logo img{
+    margin: 0;
+    padding: 0;
+}
+.logo a:link, .logo a:visited, .logo a:hover, .logo a:active{
+    text-decoration: none;
+    text-decoration-style: none;
+    border: none;
+    padding: 0px;
+}
+.logo{
+    position: relative;
+    top: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color: rgba(36, 41, 67);
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    opacity: 100%;
+    z-index: 100;
+    
+}
+
+.Nav-Links{
+display: flex;
+justify-content: space-around;
+width: 50%;
+align-items: center;
+}
+
+.Nav-Links li{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* padding-right:4px ; */
+}
+.Nav-Links a{
+    color: white;
+}
+
+.Nav-Links a:link, .Nav-Links a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.Nav-Links a:hover, .Nav-Links a:active{
+    color: white;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    padding: 0 0 2px 0;
+}
+
+.Burger div{
+    height: 3px;
+    width: 25px;
+    background-color: white;  
+    margin:4px;
+}
+.Burger {
+    display: none;
+}
+/* styling for search-box */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 14px;
+    float: left;
+    color: black;
+    width: 55%;
+    height: 40px;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  form.example input[type=text]::placeholder{
+      color:rgb(114, 113, 113);
+  }
+  form.example input[type=text]:focus {
+    background-color: rgb(224, 219, 219);
+  }
+  
+  /* Style the submit search icon/button */
+  form.example button {
+    float: left;
+    width: 20%;
+    height: 40px;
+    padding: 2px;
+    background-color: rgba(36, 41, 67);
+    color: white;
+    font-size: 18px;
+    border: 1px solid #f1f1f1;; /* Prevent borders */
+    cursor: pointer;
+  }
+
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* styling for main body */
+  .mainBody{
+  margin: 0 50px 0 50px;   
+  }
+  .center-xy{
+      text-align: center;
+  }
+  /* styling for carousel */
+  .carousel-textbody{
+      margin-top: 80px;
+  }
+  .autoplayButton{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(245, 53, 53, 0.8);
+    padding: 10px 25px;
+    font-size: 16px;
+    height: 50px;    
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .autoplayButton:hover{
+      border: 2px solid white;
+  }
+  .autoplayOn{
+    margin-right: 20px;
+    background-color: rgb(26, 223, 26,0.8);
+  }
+
+  .carousel{
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin: auto;
+      border-top: 5px solid white;
+      border-bottom: 5px solid white;
+      overflow-y: hidden;   
+  }
+  .arrow{
+      font-size: 40px;
+      position: absolute;
+      top:45%;
+    cursor: pointer;
+    padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  background-color:rgb(0, 0, 0,0.5);
+  }
+  .right{
+      left:0px;
+  }
+  .left{
+    right: 0px;
+  }
+  
+  .noOfSlide{
+      position: absolute;
+      top: 10px;
+      left:10px;
+      font-weight: bolder;
+      font-size: 18px;
+  }
+
+  .carousel a:hover{
+    background-color:rgb(0, 0, 0,0.8);
+  }
+  .dotsCarousel{
+    position: absolute; 
+    bottom: 5px; 
+    margin: 0 auto; 
+    width: 100%;
+  }
+  .dot{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 15px;
+    height: 15px;
+    margin: 10px 15px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color:white;
+  }
+  
+  /* Fading animation for carousel slides */
+ .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* styling for footer */
+    .contact{
+    min-height: 150px;
+    background-color: rgba(36, 41, 67);
+    }
+
+    .title-of-footer{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    }
+
+    .list-contacts{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        border-bottom: 10px solid white;
+        margin-bottom: 1px;
+    }
+    .social-icons{
+        font-size: 24px;
+        border:none;
+        background-color: white;
+        color: rgba(36, 41, 67);
+        border-radius: 50%;
+    }
+
+    .list-contacts a:hover{
+        background-color:#9bf1ff;
+    }
+
+
+ /* styling for go to top CTA */
+.goToTopCTA a {
+    background-color: rgba(36, 41, 67);
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+.goToTopCTA a:hover, .goToTopCTA a:active{
+   color: #9bf1ff;
+   border:2px solid #9bf1ff;
+}
+.goToTopCTA{
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+ 
+
+/* styling for navigation header in Medium device view */
+@media screen and (max-width:1024px){
+    .Nav-Links{
+    width: 60%;
+    }
+}
+
+
+/* styling for small device */
+@media screen and (max-width:768px){
+    
+    body{
+        margin: 0;
+        }
+    .text-body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* styling for navigation header in small device*/
+    .Nav-Links{
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 8vh;
+        padding: 0px;
+        width:50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .Nav-Links li{
+        opacity: 0;
+    }
+    .Nav-Active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinksFade {
+        from{ opacity: 0;
+        transform: translateX(50%);}
+        to { opacity: 1;
+        transform: translateX(0%);
+        }
+    }
+    .Nav-Links a{
+        color:black !important;
+    }
+    
+    .Burger{
+        display: block;
+    }
+    
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .toggle .line2{
+       opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -5px);;
+    }
+
+    /* styling for search box in small device */
+    .example{
+       position: relative;
+       left: 30px; 
+    }
+    /* styling for carousel  arrow in small device */
+    .carousel{
+        height: 240px;
+    }
+    .arrow{
+        font-size: 20px;
+        position: absolute;
+        top:35%; 
+    }
+    .dotsCarousel{
+        bottom: 0px; 
+        margin: 0 auto; 
+        width: 100%;
+      }
+     .dot{
+         margin: 8px;
+     } 
+    
+}
+
+

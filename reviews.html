@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Reviews Section</title>
+        <meta name="description" content="I am a coder and learner. I am currently lerning Html, css, JS.">
+        <meta name="author" content="Ankita Bagale">
+        <meta name="theme-color" content="#A9A9A9">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="aboutStyle.css" type="text/css">
+        <link rel="stylesheet" href="reviewStyle.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="Images/favicon3.icon" type="image/x-icon">
+        
+        
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+            });
+        </script>
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="header"> </div>
+        <div class="startOfBody"></div>
+
+        <div class="page-title">
+            <div> 
+                <h1 style="text-align: center;">Reviews</h1>
+            </div>
+            
+            <!-- Fields to enter reviews -->
+            <form class="reviewDetailsForm">
+                <div class="reviewDetails">
+                      <!-- name text field  -->
+                    <div class="fields">
+                        <div class="labels">
+                            <label for="name">Full Name</label><span class="required">*</span>
+                        </div>
+                        <div class="textbox">
+                            <input type="text" id="name" placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="errorMessage">
+                            <h5><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please enter name</h5>
+                        </div>
+                    </div>
+                    <!-- comment text field -->
+                    <div class="fields">
+                        <div class="labels">
+                            <label for="comment">Comments</label><span class="required">*</span>
+                        </div>
+                            <div class="textbox">
+                            <textarea id="comment" placeholder="Enter your comments" required></textarea>
+                        </div>
+                        <div class="errorMessage">
+                            <h5><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please enter comments</h5>
+                        </div>
+                    </div>
+                </div>
+                 <!-- submit button -->
+                <div class="submitReview">
+                    <button id="btn" type="submit" onclick="checkFields(); return false">Post</button>
+                </div>
+            </form>
+
+
+            <!-- Posted reviews area -->
+            <div id="container">
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer"></div>
+    
+            <script src="reviewsPost.js"></script>
+    </body>
+</html>
